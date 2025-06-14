@@ -1,0 +1,105 @@
+// https://aka.ms/devcontainer.json
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Microsoft:
+                "ms-vscode-remote.remote-ssh",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.makefile-tools",
+
+                // Github:
+                "GitHub.copilot",
+                "GitHub.remotehub",
+                "GitHub.codespaces",
+                "GitHub.github-vscode-theme",
+                "GitHub.vscode-pull-request-github",
+                "GitHub.vscode-github-actions",
+
+                // Version control:
+                "eamodio.gitlens",
+                "vivaxy.vscode-conventional-commits",
+                "MichaelCurrin.auto-commit-msg",
+                "huizhou.githd",
+                "arturock.gitstash",
+                "letmaik.git-tree-compare",
+                "donjayamanne.githistory",
+                "mhutchie.git-graph",
+                "waderyan.gitblame",
+
+                // External diagnostics:
+                "softwaredotcom.swdc-vscode",
+                "Lightrun.lightrunplugin-saas",
+
+                // External integration:
+                "Ho-Wan.vscode-trello-viewer",
+                "hediet.vscode-drawio",
+
+                // General aesthetics:
+                "usernamehw.errorlens",
+                "vscode-icons-team.vscode-icons",
+                "oderwat.indent-rainbow",
+                "kamikillerto.vscode-colorize",
+                "mkxml.vscode-filesize",
+                "IBM.output-colorizer",
+
+                // General tools:
+                "Gruntfuggly.todo-tree",
+
+                // General syntax:
+                "redhat.vscode-xml",
+                "redhat.vscode-yaml",
+                "IronGeek.vscode-env",
+                "Kasik96.latte",
+                "rohit-gohri.format-code-action",
+
+                // General formatting:
+                "tombonnike.vscode-status-bar-format-toggle",
+                "esbenp.prettier-vscode",
+
+                // General testing:
+                "hbenl.vscode-test-explorer",
+                "ms-vscode.test-adapter-converter",
+
+                // General backup:
+                "xyz.local-history"
+            ],
+            "settings": {
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.svn": true,
+                    "**/.hg": true,
+                    "**/CVS": true,
+                    "**/.DS_Store": true,
+                    "**/Thumbs.db": true
+                },
+
+                "task.quickOpen.showAll": false,
+                "task.quickOpen.detail": true,
+                "task.quickOpen.history": 20,
+
+                "github.copilot.enable": {
+                    "*": true
+                },
+                "github.copilot.editor.enableAutoCompletions": true,
+                "github.copilot.advanced": {},
+
+                "testExplorer.hideWhen": "never",
+                "testExplorer.showOnRun": true,
+                "testExplorer.useNativeTesting": false,
+                "testExplorer.addToEditorContextMenu": true,
+                "testExplorer.codeLens": true,
+                "testExplorer.errorDecoration": true,
+                "testExplorer.errorDecorationHover": true,
+                "testExplorer.gutterDecoration": true,
+                "testExplorer.hideEmptyLog": true,
+                "testExplorer.mergeSuites": true,
+
+                "editor.formatOnPaste": false,
+                "editor.formatOnType": false,
+                "editor.formatOnSave": false,
+                "editor.formatOnSaveMode": "file"
+            }
+        }
+    }
+}
