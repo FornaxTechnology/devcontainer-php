@@ -61,6 +61,19 @@
                 "hbenl.vscode-test-explorer",
                 "ms-vscode.test-adapter-converter",
 
+                // PHP dependency management:
+                "DEVSENSE.composer-php-vscode",
+
+                // PHP testing and debugging:
+                "xdebug.php-debug",
+                "RobertOstermann.phpunit-extended-test-explorer",
+
+                // PHP syntax:
+                "bmewburn.vscode-intelephense-client",
+
+                // PHP formatting:
+                "SanderRonde.phpstan-vscode",
+
                 // General backup:
                 "xyz.local-history"
             ],
@@ -94,6 +107,24 @@
                 "testExplorer.gutterDecoration": true,
                 "testExplorer.hideEmptyLog": true,
                 "testExplorer.mergeSuites": true,
+
+                "phpunit.testExplorer.folderPattern": "tests/**/*.php",
+                "phpunit.testExplorer.showOutput": "always",
+                "phpunit.commandLine.showOutput": "always",
+                "phpunit.args": [
+                    "--testdox",
+                    "--no-coverage"
+                ],
+
+                "phpstan.enabled": true,
+                "phpstan.enableStatusBar": true,
+                "phpstan.timeout": 100000,
+                "phpstan.showProgress": true,
+
+                "[php]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode",
+                    "editor.formatOnSave": true
+                },
 
                 "editor.formatOnPaste": false,
                 "editor.formatOnType": false,
